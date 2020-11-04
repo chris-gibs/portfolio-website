@@ -19,13 +19,10 @@ nav {
   padding: 1em;
 }
 
-.contact-form, .contact-form #submit {
+.contact-form {
   margin: auto;
   display: block;
   width: 100%;
-}
-.contact-form #submit {
-  width: auto;
 }
 
 /* Basics */
@@ -35,7 +32,9 @@ body {
 }
 
 h1 {
+  margin: 0.3em;
   font-size: 15vw;
+  text-align: center;
 }
 
 p {
