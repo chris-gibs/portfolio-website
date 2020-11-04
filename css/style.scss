@@ -1,29 +1,52 @@
-/* Import declarations */
-
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 /* Components */
 // Navigation
 nav {
+    position: fixed;
+    bottom: 0;
+    right: 0;
     
 }
 
 // Captioned Image
+.image-tile {
+    position: relative;
 
+}
 
 // Blog Post
+.blog-post {
+    background-color: #1f1f1f;
+    margin: 2em;
+    border: 2px solid #f5f5f5;
+    border-radius: 25px;
+    padding: 1em;
 
+}
 
 // Contact Form
-
+.contact-form {
+    margin: auto;
+    display: block;
+    width: 100%;
+    #submit {
+        @extend .contact-form;
+        width: auto;
+    }
+}
 
 // Terminal Emulator
 
-
-/* Element styling */
-
-
-/* Class styling */
-
-
-/* Pseudo-class styling */
-
+/* Basics */
+body {
+    background-color: #2b2b2b;
+    color: #e6e6e6;
+}
+h1 {
+    font-size: 15vw;
+}
+p {
+    font-size: 2vw;
+}
