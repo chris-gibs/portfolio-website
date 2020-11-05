@@ -1,34 +1,48 @@
 /* Import Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+/* Declarations */
 /* Components */
+/* Navigation */
 nav {
   position: fixed;
-  bottom: 0;
+  top: 50%;
   right: 0;
 }
 
+/* Captioned Image */
 .image-tile {
   position: relative;
 }
 
+/* Blog Post */
 .blog-post {
   background-color: #1f1f1f;
-  margin: 2em;
+  margin: 2vw;
   border: 2px solid #f5f5f5;
-  border-radius: 25px;
-  padding: 1em;
+  border-radius: 20px;
+  padding: 1vw;
 }
 
-.contact-form {
-  margin: auto;
+/* Contact Form */
+.contact {
+  margin: 1em;
   display: block;
-  width: 100%;
+  width: 70vw;
+  align-items: center;
+}
+.contact #submit {
+  width: 1vw;
 }
 
+/* Terminal Emulator */
 /* Basics */
 body {
   background-color: #2b2b2b;
   color: #e6e6e6;
+}
+
+header {
+  text-align: center;
 }
 
 h1 {
@@ -39,6 +53,11 @@ h1 {
 
 p {
   font-size: 2vw;
+}
+
+footer {
+  text-align: center;
+  opacity: 0.5;
 }
 
 /*# sourceMappingURL=style.css.map */
