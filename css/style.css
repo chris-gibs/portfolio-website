@@ -17,12 +17,15 @@ nav a {
   float: left;
   display: block;
   color: #0092e0;
-  padding: 10px;
-  text-decoration: none;
   font-size: 15px;
+  padding: 12px;
 }
 .social-links {
-  font-size: 50px;
+  font-size: 70px;
+  padding: 5px;
+}
+nav a, .social-links {
+  text-decoration: none;
 }
 /* Active Page */
 a.active {
@@ -137,6 +140,7 @@ p {
 }
 footer {
   margin: 15px;
+  padding: 10px;
   opacity: 0.7;
 }
 #foot-text {
