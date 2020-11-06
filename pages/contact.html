@@ -9,32 +9,33 @@
         <script src="https://kit.fontawesome.com/28fbb69f3f.js" integrity="" crossorigin="anonymous"></script>
     </head>
     <body>
-        <a id="header"><header></header></a>
-        <h1>Contact</h1>
-        <nav>
+        <nav id="#top">
             <!-- Page Links -->
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
+            <a href="contact.html" class="active">Contact</a>
             <a href="blog.html">Blog</a>
             <a href="projects.html">Projects</a>
-            <!-- Social Links -->
-            <a href="https://github.com/chris-gibs"><i class="fab fa-github-square"></i></a>
-            <a href="https://www.linkedin.com/in/chris-gibs"><i class="fab fa-linkedin"></i></a>
-            <a href="https://twitter.com/_ChrisGibs"><i class="fab fa-twitter-square"></i></a>
         </nav>
         <main>
-            <form class="contact-form">
-                <input type="text" class="contact" id="fullname" name="fullname" placeholder="Full name..">
-                <input type="email" class="contact" id="email" name="email" placeholder="youremail@example.com..">
+            <h1>Contact</h1>
+            <form>
+                <input type="text" name="fullname" placeholder="Full name..">
+                <input type="text" name="email" placeholder="youremail@example.com..">
                 <!-- Will need to adjust textarea height for flexibility later-->
-                <textarea class="contact" id="message" name="message" placeholder="Message.." style="height: 20vh"></textarea>
-                <input type="submit" id="submit" value="Submit">
+                <textarea name="message" placeholder="Message.." style="height: 20vh"></textarea>
+                <input type="submit" value="Submit">
             </form>
         </main>
         <footer>
-            <p>© 2020 Christopher Gibson. All rights reserved.</p>
-            <a href="#header">Back to Top</a>
+            <p id="foot-text">© 2020 Christopher Gibson. All rights reserved. <br>
+                Mobile: 0400 123 456 <br>
+                Email: placeholder-email@mail.com <br>
+                <!-- Social Links -->
+                <a href="https://github.com/chris-gibs" class="social-links" target="_blank"><i class="fab fa-github-square"></i></a>
+                <a href="https://www.linkedin.com/in/chris-gibs" class="social-links" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/_ChrisGibs" class="social-links" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            </p>
         </footer>
     </body>
 </html>

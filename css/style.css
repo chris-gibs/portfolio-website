@@ -1,63 +1,144 @@
 /* Import Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
-/* Declarations */
+
 /* Components */
 /* Navigation */
+/* Nav Menu */
 nav {
-  position: fixed;
-  top: 50%;
-  right: 0;
+  width: 100%;
+  background-color: #1f1f1f;
+  position: relative;
+  height: auto;
+  overflow: auto;
+  border-radius: 4px;
+}
+/* Nav Links */
+nav a {
+  float: left;
+  display: block;
+  color: #0092e0;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 15px;
+}
+.social-links {
+  font-size: 50px;
+}
+/* Active Page */
+a.active {
+  background-color: #e6e6e6;
+  color: #0757a3;
+}
+/* Navigation Screen Adjustment */
+@media screen and (max-width: 400px) {
+  nav a {
+    float: none;
+    text-align: center;
+  }
 }
 
-/* Captioned Image */
-.image-tile {
-  position: relative;
+/* About Articles */
+.flex-container {
+  width: 100%;
+  height: auto;
+  background-color: #1f1f1f;
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.flex-item {
+  width: 300px;
+  height: 400px;
+  background-color: #0092e0f6;
+  border-radius: 10px;
+  margin: 20px;
+}
+.flex-item h3, .flex-item p  {
+  padding: 2px 6px;
+}
+.flex-item img {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 400px) {
+  .flex-container {
+    display: block;
+  }
 }
 
 /* Blog Post */
 .blog-post {
   background-color: #1f1f1f;
-  margin: 2vw;
-  border: 2px solid #f5f5f5;
+  margin: 15px 10px;
+  border: 1.5px solid #0092e0;
   border-radius: 20px;
-  padding: 1vw;
+}
+.blog-post .date {
+  font-size: 10px;
+  text-align: left;
+  opacity: .7;
+}
+.blog-post h2 .blog-post p, .blog-post .date {
+  padding: 4px 10px;
+}
+.blog-post img {
+  width: 100%;
+  height: auto;
+}
+.blog-post h3, .blog-post ul {
+  text-align: left;
+}
+.blog-post h3 {
+  padding-left: 4px;
 }
 
 /* Contact Form */
-.contact {
-  margin: 1em;
-  display: block;
-  width: 70vw;
-  align-items: center;
+input[type=text], textarea {
+  background-color: #1f1f1f;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #f5f5f5;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 8px;
+  resize: vertical;
 }
-.contact #submit {
-  width: 1vw;
+input[type=submit] {
+  background-color: #0092e0;
+  color: #e6e6e6;
+  margin-bottom: 8px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-/* Terminal Emulator */
 /* Basics */
 body {
   background-color: #2b2b2b;
   color: #e6e6e6;
-}
-
-header {
+  font-family: 'Roboto Mono', sans-serif;
   text-align: center;
+  height: auto;
 }
-
 h1 {
-  margin: 0.3em;
-  font-size: 15vw;
-  text-align: center;
+  margin: 20px 0px;
+  border-bottom: 2px solid #0092e0;
+  font-size: 50px;
 }
-
+h2 {
+  padding: 2px;
+  font-size: 35px;
+}
 p {
-  font-size: 2vw;
+  font-size: 13px;
 }
-
 footer {
-  text-align: center;
-  opacity: 0.5;
+  margin: 15px;
+  opacity: 0.7;
 }
-
-/*# sourceMappingURL=style.css.map */
+#foot-text {
+  font-size: 11px;
+}

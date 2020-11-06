@@ -7,60 +7,66 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../css/style.css" integrity="">
         <script src="https://kit.fontawesome.com/28fbb69f3f.js" integrity="" crossorigin="anonymous"></script>
-        <script src="../scripts/slideshow-script.js" integrity=""></script>
     </head>
     <body>
-        <a id="header"><header></header></a>
-        <h1>About</h1>
-        <nav>
-            <!-- Page Links -->
-            <a href="index.html" class="column1">Home</a>
-            <a href="about.html" class="column1">About</a>
-            <a href="contact.html" class="column1">Contact</a>
-            <a href="blog.html" class="column1">Blog</a>
-            <a href="projects.html" class="column1">Projects</a>
-            <!-- Social Links -->
-            <a href="https://github.com/chris-gibs" class="column2"><i class="fab fa-github-square"></i></a>
-            <a href="https://www.linkedin.com/in/chris-gibs" class="column2"><i class="fab fa-linkedin"></i></a>
-            <a href="https://twitter.com/_ChrisGibs" class="column2"><i class="fab fa-twitter-square"></i></a>
+        <nav id="#top">
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="blog.html">Blog</a>
+            <a href="projects.html">Projects</a>
         </nav>
         <main>
+            <h1>About</h1>
             <h2>Hobbies</h2>
-            <div>
-            <article class="image-tile slideshow">
-                <h3>Mountain Biking</h3>
-                <img src="../images/mountbikeride.jpg" alt="mountain bike riding">
-                <p>Here is an image of something I like to do in my spare time, riding my mountain bike!</p>
-            </article>
-            <article class="image-tile slideshow">
-                <h3>Weight Lifting</h3>
-                <img src="../images/deadlift.jpg" alt="buff dude deadlifting">
-                <p>Here is an image of something I like to do in my spare time, lifting heavy things!</p>
-            </article>
+            <div class="flex-container">
+                <article class="flex-item">
+                    <h3>Mountain Biking</h3>
+                    <img src="../images/mountbikeride.jpg" alt="mountain bike riding">
+                    <p>Here is an image of something I like to do in my spare time, riding my mountain bike!</p>
+                </article>
+                <article class="flex-item">
+                    <h3>Weight Lifting</h3>
+                    <img src="../images/deadlift.jpg" alt="buff dude deadlifting">
+                    <p>Here is another image of something I like to do, lifting heavy things!</p>
+                </article>
+                <article class="flex-item">
+                    <h3>Video Games</h3>
+                    <img src="../images/cyberpunk-2077.jpg" alt="cyberpunk guy">
+                    <p>And another one! This better not be delayed again!</p>
+                </article>
             </div>
-
             <h2>Work</h2>
-            <article class="image-tile slideshow">
-                <h3>Grilld</h3>
-                <img src="../images/grilld.jpg" alt="burgers from grilld">
-                <p>Here is an image of a company I used to work for, Grilld!</p>
-            </article>
-            <article class="image-tile slideshow">
-                <h3>Royal Australian Air Force (Reserves)</h3>
-                <img src="../images/raaf-pearce.jpg" alt="air force personnel and planes">
-                <p>Here is an image of a group I used to work for, the Royal Australian Air Force as a reservist!</p>
-            </article>
-
-            <h2>Education</h2>
-            <article class="image-tile">
-                <h3>Coder Academy</h3>
-                <img src="../images/coderacademy.jpeg" alt="coderacademy">
-                <p>Here is an image of an institution I am currently attending, Coder Academy!</p>
-            </article>
+            <div class="flex-container">
+                <article class="flex-item">
+                    <h3>Grilld</h3>
+                    <img src="../images/grilld.jpg" alt="burgers from grilld">
+                    <p>Here is an image of a company I used to work for, Grilld!</p>
+                </article>
+                <article class="flex-item">
+                    <h3>Royal Australian Air Force (Reserves)</h3>
+                    <img src="../images/raaf-pearce.jpg" alt="air force personnel and planes">
+                    <p>Here is an image of a group I used to work for, the Royal Australian Air Force as a reservist!</p>
+                </article>
+            </div>
+                <h2>Education</h2>
+                <div class="flex-container">
+                <article class="flex-item">
+                    <h3>Coder Academy</h3>
+                    <img src="../images/coderacademy.jpeg" alt="coderacademy">
+                    <p>Here is an image of an institution I am currently attending, Coder Academy!</p>
+                </article>
+            </div>
         </main>
         <footer>
-            <p>© 2020 Christopher Gibson. All rights reserved.</p>
-            <a href="#header">Back to Top</a>
+            <p id="foot-text">© 2020 Christopher Gibson. All rights reserved. <br>
+                Mobile: 0400 123 456 <br>
+                Email: placeholder-email@mail.com <br>
+                <!-- Social Links -->
+                <a href="https://github.com/chris-gibs" class="social-links" target="_blank"><i class="fab fa-github-square"></i></a>
+                <a href="https://www.linkedin.com/in/chris-gibs" class="social-links" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/_ChrisGibs" class="social-links" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            </p>
         </footer>
     </body>
 </html>

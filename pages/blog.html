@@ -9,23 +9,19 @@
         <script src="https://kit.fontawesome.com/28fbb69f3f.js" integrity="" crossorigin="anonymous"></script>
     </head>
     <body>
-        <a id="header"><header></header></a>
-        <h1>Blog</h1>
-        <nav>
+        <nav id="#top">
             <!-- Page Links -->
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
-            <a href="blog.html">Blog</a>
+            <a href="blog.html" class="active">Blog</a>
             <a href="projects.html">Projects</a>
-            <!-- Social Links -->
-            <a href="https://github.com/chris-gibs"><i class="fab fa-github-square"></i></a>
-            <a href="https://www.linkedin.com/in/chris-gibs"><i class="fab fa-linkedin"></i></a>
-            <a href="https://twitter.com/_ChrisGibs"><i class="fab fa-twitter-square"></i></a>
         </nav>
         <main>
+            <h1>Blog</h1>
             <article class="blog-post">
                 <h2>5 best strats to fix coding problems</h2>
+                <p class="date">Date Published: 06/11/2020</p>
                 <img src="../images/headexplode.jpg" alt="frustration">
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
@@ -37,6 +33,7 @@
             </article>
             <article class="blog-post">
                 <h2>How to clear your mind</h2>
+                <p class="date">Date Published: 05/11/2020</p>
                 <img src="../images/mountain.jpg" alt="mountaintop">
                 <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in
                 a piece of classical Latin literature from 45 BC, making it over 2000 years old.
@@ -50,14 +47,23 @@
             </article>
             <article class="blog-post">
                 <h2>Hack the planet in 4 easy steps</h2>
+                <p class="date">Date Published: 04/11/2020</p>
                 <img src="../images/hackerman.jpg" alt="silly hackers">
-                <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for
+                <p class="padding">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for
                 those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum"
                 by Cicero are also reproduced in their exact original form, accompanied by English
                 versions from the 1914 translation by H. Rackham.</p>
+                <h3>TLDR:</h3>
+                <ul>
+                    <li>Become Mr. Robot</li>
+                    <li>Get into FSociety</li>
+                    <li>...</li>
+                    <li>Profit?</li>
+                </ul>
             </article>
             <article class="blog-post">
                 <h2>Handling success: By Emilia Clarke</h2>
+                <p class="date">Date Published: 03/11/2020</p>
                 <img src="../images/graphup.jpg" alt="meeting graph goes up">
                 <p>It is a long established fact that a reader will be distracted by the readable
                 content of a page when looking at its layout. The point of using Lorem Ipsum is that
@@ -70,6 +76,7 @@
             </article>
             <article class="blog-post">
                 <h2>Stock photos and why we need them</h2>
+                <p class="date">Date Published: 02/11/2020</p>
                 <img src="../images/thumbs.png" alt="thumbs up">
                 <p>There are many variations of passages of Lorem Ipsum available, but the majority
                 have suffered alteration in some form, by injected humour, or randomised words which
@@ -83,8 +90,14 @@
             </article>
         </main>
         <footer>
-            <p>© 2020 Christopher Gibson. All rights reserved.</p>
-            <a href="#header">Back to Top</a>
+            <p id="foot-text">© 2020 Christopher Gibson. All rights reserved. <br>
+                Mobile: 0400 123 456 <br>
+                Email: placeholder-email@mail.com <br>
+                <!-- Social Links -->
+                <a href="https://github.com/chris-gibs" class="social-links" target="_blank"><i class="fab fa-github-square"></i></a>
+                <a href="https://www.linkedin.com/in/chris-gibs" class="social-links" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/_ChrisGibs" class="social-links" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            </p>
         </footer>
     </body>
 </html>
