@@ -98,6 +98,7 @@ a.active {
 }
 
 /* Contact Form */
+/* Need to fix boxes fitting past the screen  */
 input[type=text], textarea {
   background-color: #1f1f1f;
   width: 100%;
@@ -118,7 +119,7 @@ input[type=submit] {
   cursor: pointer;
 }
 
-/* Basics */
+/* General styling */
 body {
   background-color: #2b2b2b;
   color: #e6e6e6;
