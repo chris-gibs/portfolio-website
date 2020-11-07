@@ -35,7 +35,7 @@ a.active {
 }
 
 /* Graphical Component 1: About Articles */
-.flex-container {
+.about-container {
   width: 98%;
   height: auto;
   background-color: #1f1f1f;
@@ -45,31 +45,25 @@ a.active {
   flex-wrap: wrap;
   justify-content: center;
 }
-.flex-item {
+.about-item {
   width: 300px;
   height: 400px;
   background-color: #0092e0f6;
   border-radius: 10px;
   margin: 20px 10px;
 }
-.flex-item h3, .flex-item p  {
+.about-header {
+  margin-bottom: 2px;
+}
+.about-item h3, .about-item p  {
   padding: 2px 6px;
 }
-.flex-item img {
+.about-item img {
   width: 100%;
   height: auto;
 }
-
-/* Mobile Screen Adjustments */
-@media screen and (max-width: 400px) {
-  nav a {
-    float: none;
-    text-align: center;
-  }
-  .flex-container {
-    display: block;
-    width: 95%;
-  }
+#resume-dl {
+  font-size: 24px;
 }
 
 /* Graphical Component 2: Blog Post */
@@ -98,6 +92,69 @@ a.active {
   padding-left: 4px;
 }
 
+/* Graphical component 3: Projects Captioned Images */
+.project-item {
+  width: 95%;
+  height: auto;
+  display: block;
+  position: relative;
+  justify-content: center;
+  margin: 20px 5px;
+}
+.project-item h2 {
+  top: 20px;
+  transform: translate(-50%, -50%);
+}
+.project-item p {
+  width: auto;
+  bottom: 8px;
+  transform: translate(-50%, 5%);
+}
+.project-item h2, .project-item p {
+  background: rgba(5, 5, 5, .8);
+  position: absolute;
+  left: 50%;
+}
+
+/* Graphical component 4: Home Portrait */
+#portrait {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  height: auto;
+  opacity: 0.4;
+  border-radius: 60px;
+  z-index: -1;
+}
+.a-home {
+  font-size: 20px;
+}
+#a-develop {
+  padding: 0px 7px;
+  border-left: 1px solid #f5f5f5;
+  border-right: 1px solid #f5f5f5;
+}
+
+/* Mobile Screen Adjustments */
+@media screen and (max-width: 400px) {
+  nav a {
+    float: none;
+    text-align: center;
+  }
+  .flex-container {
+    display: block;
+    width: 95%;
+  }
+  .project-item h2 {
+    font-size: 18px;
+  }
+  .project-item p {
+    font-size: 12px;
+  }
+}
+
 /* Text Component 2: Contact Form */
 input[type=text], textarea {
   background-color: #1f1f1f;
@@ -119,15 +176,7 @@ input[type=submit] {
   cursor: pointer;
 }
 
-/* General styling */
-body {
-  background-color: #2b2b2b;
-  color: #e6e6e6;
-  font-family: 'Roboto Mono', sans-serif;
-  text-align: center;
-  height: auto;
-}
-/* Text Component 3: Page Headers */
+/* Text Component 3: Main Page Headers */
 h1 {
   font-style: italic;
   margin: 20px 0px;
@@ -141,7 +190,8 @@ h2 {
 p {
   font-size: 13px;
 }
-/* Text Component 4: Footers  */
+
+/* Text Component 4: Footers */
 footer {
   margin: 15px;
   padding: 10px;
@@ -153,4 +203,13 @@ footer {
 #back-to-top {
   font-weight: bold;
   font-size: 15px;
+}
+
+/* General styling */
+body {
+  background-color: #2b2b2b;
+  color: #e6e6e6;
+  font-family: 'Roboto Mono', sans-serif;
+  text-align: center;
+  height: auto;
 }
