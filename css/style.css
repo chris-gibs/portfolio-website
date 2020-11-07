@@ -3,7 +3,7 @@
 
 /* Components */
 /* Navigation */
-/* Nav Menu */
+/* Text Component 1: Nav Bar*/
 nav {
   width: 100%;
   background-color: #1f1f1f;
@@ -16,6 +16,7 @@ nav {
 nav a {
   float: left;
   display: block;
+  font-weight: bold;
   color: #0092e0;
   font-size: 15px;
   padding: 12px;
@@ -40,9 +41,9 @@ a.active {
   }
 }
 
-/* About Articles */
+/* Graphical Component 1: About Articles */
 .flex-container {
-  width: 100%;
+  width: 97%;
   height: auto;
   background-color: #1f1f1f;
   border-radius: 12px;
@@ -71,7 +72,7 @@ a.active {
   }
 }
 
-/* Blog Post */
+/* Graphical Component 2: Blog Post */
 .blog-post {
   background-color: #1f1f1f;
   margin: 15px 10px;
@@ -97,11 +98,10 @@ a.active {
   padding-left: 4px;
 }
 
-/* Contact Form */
-/* Need to fix boxes fitting past the screen  */
+/* Text Component 2: Contact Form */
 input[type=text], textarea {
   background-color: #1f1f1f;
-  width: 100%;
+  width: 97%;
   padding: 12px;
   border: 1px solid #f5f5f5;
   border-radius: 4px;
@@ -127,7 +127,9 @@ body {
   text-align: center;
   height: auto;
 }
+/* Text Component 3: Page Headers */
 h1 {
+  font-style: italic;
   margin: 20px 0px;
   border-bottom: 2px solid #0092e0;
   font-size: 50px;
@@ -139,6 +141,7 @@ h2 {
 p {
   font-size: 13px;
 }
+/* Text Component 4: Footers  */
 footer {
   margin: 15px;
   padding: 10px;
@@ -146,4 +149,8 @@ footer {
 }
 #foot-text {
   font-size: 11px;
+}
+#back-to-top {
+  font-weight: bold;
+  font-size: 15px;
 }
