@@ -115,7 +115,6 @@ a.active {
 
 /* Graphical component 4: Home Portrait */
 #portrait {
-  orientation: landscape;
   display: block;
   position: relative;
   margin-left: auto;
@@ -157,7 +156,9 @@ a.active {
   .project-item img {
     width: 300px;
   }
-
+  #portrait {
+    transform: rotate(-90deg);
+  }
 }
 @media screen and (min-width: 600px) {
   #portrait {
