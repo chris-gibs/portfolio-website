@@ -3,7 +3,7 @@
 
 /* Components */
 /* Navigation */
-/* Text Component 1: Nav Bar*/
+/* Text Component 1: Nav Bar */
 nav {
   width: 100%;
   background-color: #1f1f1f;
@@ -12,7 +12,6 @@ nav {
   overflow: auto;
   border-radius: 4px;
 }
-/* Nav Links */
 nav a {
   float: left;
   display: block;
@@ -20,14 +19,9 @@ nav a {
   color: #0092e0;
   font-size: 15px;
   padding: 12px;
-}
-.social-links {
-  font-size: 70px;
-  padding: 5px;
-}
-nav a, .social-links {
   text-decoration: none;
 }
+
 /* Active Page */
 a.active {
   background-color: #e6e6e6;
@@ -131,6 +125,8 @@ a.active {
   border-radius: 60px;
   z-index: -1;
 }
+
+/* Home page intra-links */
 .a-home {
   font-size: 20px;
 }
@@ -205,6 +201,10 @@ footer {
 }
 #foot-text {
   font-size: 11px;
+}
+.social-links {
+  font-size: 70px;
+  text-decoration: none;
 }
 #back-to-top {
   font-weight: bold;
