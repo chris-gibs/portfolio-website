@@ -94,11 +94,12 @@ a.active {
 
 /* Graphical component 3: Projects Captioned Images */
 .project-item {
-  width: 95%;
+  width: 80vw;
   height: auto;
+  margin-left: auto;
+  margin-right: auto;
   display: block;
   position: relative;
-  justify-content: center;
   margin: 20px 5px;
 }
 .project-item h2 {
