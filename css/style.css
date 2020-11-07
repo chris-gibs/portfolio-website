@@ -117,9 +117,7 @@ a.active {
 #portrait {
   display: block;
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
+  margin: 40px auto;
   width: 90%;
   height: auto;
   opacity: 0.5;
