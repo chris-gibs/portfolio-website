@@ -159,6 +159,7 @@ a.active {
   }
   #portrait {
     transform: rotate(-90deg);
+    width: 250px;
   }
 }
 @media screen and (min-width: 600px) {
