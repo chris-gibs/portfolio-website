@@ -156,6 +156,9 @@ a.active {
   .project-item p {
     font-size: 12px;
   }
+  .project-item img {
+    width: 350px;
+  }
 }
 
 /* Text Component 2: Contact Form */
