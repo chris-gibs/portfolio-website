@@ -157,7 +157,11 @@ a.active {
     width: 300px;
   }
 }
-
+@media screen and (min-width: 600px) {
+  #portrait {
+    width: 450px;
+  }
+}
 /* Text Component 2: Contact Form */
 input[type=text], textarea {
   background-color: #1f1f1f;
