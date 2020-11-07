@@ -115,6 +115,7 @@ a.active {
 
 /* Graphical component 4: Home Portrait */
 #portrait {
+  orientation: portrait;
   display: block;
   position: relative;
   margin-left: auto;
@@ -159,7 +160,7 @@ a.active {
 }
 @media screen and (min-width: 600px) {
   #portrait {
-    width: 450px;
+    width: 400px;
   }
 }
 /* Text Component 2: Contact Form */
