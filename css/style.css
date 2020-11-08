@@ -118,7 +118,7 @@ a.active {
   display: block;
   position: relative;
   margin: 40px auto;
-  width: 90%;
+  width: 95%;
   height: auto;
   opacity: 0.5;
   border-radius: 50px;
@@ -127,6 +127,7 @@ a.active {
 
 /* Home page intra-links */
 .a-home {
+  margin-bottom: 40px;
   font-size: 20px;
 }
 #a-develop {
@@ -155,7 +156,8 @@ a.active {
     width: 300px;
   }
   #portrait {
-    transform: rotate(-90deg);
+    transform: rotate(-90deg); 
+    /* Solves a weird mobile orientation issue */
   }
 }
 @media screen and (min-width: 600px) {
@@ -163,6 +165,7 @@ a.active {
     width: 400px;
   }
 }
+
 /* Text Component 2: Contact Form */
 input[type=text], textarea {
   background-color: #1f1f1f;
@@ -191,13 +194,6 @@ h1 {
   border-bottom: 2px solid #0092e0;
   font-size: 50px;
 }
-h2 {
-  padding: 2px;
-  font-size: 35px;
-}
-p {
-  font-size: 13px;
-}
 
 /* Text Component 4: Footers */
 footer {
@@ -224,4 +220,11 @@ body {
   font-family: 'Roboto Mono', sans-serif;
   text-align: center;
   height: auto;
+}
+h2 {
+  padding: 2px;
+  font-size: 35px;
+}
+p {
+  font-size: 13px;
 }
