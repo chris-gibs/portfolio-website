@@ -48,7 +48,7 @@ a.active {
 
 /* Graphical Component 1: About Articles */
 .about-container {
-  margin: 16px;
+  margin: 16px auto;
   width: 90%;
   height: auto;
   background-color: #1f1f1f;
@@ -111,7 +111,7 @@ a.active {
 
 /* Graphical component 3: Projects Captioned Images */
 .project-item {
-  margin: 16px 50%;
+  margin: 16px auto;
   display: block;
   width: 600px;
   height: auto;
@@ -127,7 +127,7 @@ a.active {
   transform: translate(-50%, 5%);
 }
 .project-item h2, .project-item p {
-  background: rgba(5, 5, 5, .8);
+  background: rgba(75, 73, 73, 0.8);
   position: absolute;
   left: 50%;
 }
