@@ -182,7 +182,7 @@ footer p {
 /* Graphical component 3: Projects Captioned Images */
 .project-item {
   margin: 20px;
-  width: 400px;
+  width: 500px;
   height: auto;
   position: relative;
 }
@@ -191,7 +191,7 @@ footer p {
   transform: translate(-50%, -50%);
 }
 .project-item p {
-  width: 80%;
+  width: 90%;
   bottom: 8px;
   transform: translate(-50%, 5%);
 }
@@ -201,7 +201,7 @@ footer p {
   left: 50%;
 }
 .project-item img {
-  width: 400px;
+  width: 500px;
   height: auto;
 }
 
@@ -228,7 +228,7 @@ body {
     width: 95%;
   }
   .project-item, .project-item img {
-    width: 85%;
+    width: 90%;
   }
 }
 /* Mobile Screen Adjustments */
