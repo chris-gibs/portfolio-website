@@ -137,7 +137,8 @@ footer p {
   margin: 8px;
 }
 .about-item h3, .about-item p  {
-  padding: 2px 4px;
+  margin: 4px;
+  padding: 4px;
 }
 .about-item img {
   width: 100%;
@@ -190,7 +191,7 @@ footer p {
   transform: translate(-50%, -50%);
 }
 .project-item p {
-  width: auto;
+  width: 90%;
   bottom: 8px;
   transform: translate(-50%, 5%);
 }
@@ -243,8 +244,5 @@ body {
   }
   .project-item p {
     font-size: 12px;
-  }
-  .project-item img {
-    width: 300px;
   }
 }
