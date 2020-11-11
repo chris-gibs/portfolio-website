@@ -187,11 +187,11 @@ footer p {
   position: relative;
 }
 .project-item h3 {
-  top: 20px;
+  top: 10px;
   transform: translate(-50%, -50%);
 }
 .project-item p {
-  width: 90%;
+  width: 80%;
   bottom: 8px;
   transform: translate(-50%, 5%);
 }
@@ -199,6 +199,10 @@ footer p {
   background: rgba(75, 73, 73, 0.8);
   position: absolute;
   left: 50%;
+}
+.project-item img {
+  width: 400px;
+  height: auto;
 }
 
 /* Graphical component 4: Background Wallpaper */
@@ -223,8 +227,8 @@ body {
   #contact-container, input[type=text], textarea {
     width: 95%;
   }
-  .project-item {
-    width: 90%;
+  .project-item, .project-item img {
+    width: 85%;
   }
 }
 /* Mobile Screen Adjustments */
@@ -240,9 +244,9 @@ body {
     width: 95%;
   }
   .project-item h2 {
-    font-size: 18px;
+    font-size: 14px;
   }
   .project-item p {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
