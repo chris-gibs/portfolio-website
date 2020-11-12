@@ -117,10 +117,11 @@ footer p {
   text-decoration: none;
   display: flex;
   margin: 0px auto;
+  justify-content: center;
 }
 #github, #linkedin, #twitter {
   width: 40px;
-  margin: 0px auto;
+  margin: 4px;
 }
 #back-to-top {
   font-weight: bold;
