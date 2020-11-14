@@ -4,6 +4,8 @@
 /* General styling */
 body {
   background-color: #222222;
+  background-image: url('../images/background.jpg');
+  background-size: 100% auto;
   color: #e6e6e6;
   font-family: 'Roboto Mono', sans-serif;
   text-align: center;
@@ -83,6 +85,9 @@ input[type=text], textarea {
   margin: 8px;
   resize: vertical;
 }
+textarea {
+  height: 20vh;
+}
 input[type=submit] {
   background-color: #0092e0;
   color: #e6e6e6;
@@ -103,28 +108,7 @@ h1 {
   font-size: 50px;
 }
 
-/* Text Component 4: Footers */
-footer {
-  border-top: 2px solid #0092e0;
-}
-footer p {
-  font-size: 11px;
-  opacity: 0.7;
-}
-#social-links {
-  width: 50%;
-  height: auto;
-  text-decoration: none;
-  display: flex;
-  margin: 0px auto;
-  justify-content: center;
-}
-#back-to-top {
-  font-weight: bold;
-  font-size: 15px;
-}
-
-/* Text Component 5: Skills */
+/* Text Component 4: Skills */
 .skill-item {
   display: block;
   width: 400px;
@@ -209,10 +193,25 @@ footer p {
   height: auto;
 }
 
-/* Graphical component 4: Background Wallpaper */
-body {
-  background-image: url('../images/background.jpg');
-  background-size: 100% auto;
+/* Graphical Component 4: Footers */
+footer {
+  border-top: 2px solid #0092e0;
+}
+footer p {
+  font-size: 11px;
+  opacity: 0.7;
+}
+#social-links {
+  width: 50%;
+  height: auto;
+  text-decoration: none;
+  display: flex;
+  margin: 0px auto;
+  justify-content: center;
+}
+#back-to-top {
+  font-weight: bold;
+  font-size: 15px;
 }
 
 /* Tablet Screen Adjustments */
@@ -235,6 +234,7 @@ body {
     width: 90%;
   }
 }
+
 /* Mobile Screen Adjustments */
 @media screen and (max-width: 400px) {
   nav a {
