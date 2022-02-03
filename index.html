@@ -1,84 +1,94 @@
-<!-- Christopher Murray Gibson, All rights reserved -->
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset=utf-8>
-        <title>Home</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/style.css"
-        integrity="sha256-TnSaJABZPha7iAKLxQFXFLC5bjF7NG1jEkKV0l/0KgI= 
-        sha384-w3v16EEH4jP37iYp4NvOtal6BH+36mhunjkOXXC76DG2JnW9Bc/HIMNQNBqUSFN8 
-        sha512-con4g2x6nJi0+13N17DTIlRc/qRBUN4Rly708QQoRZstcm8aeQOe6rbrCB+9SslGEXa4fS1GyM9ic0yR7ODyEw==">
-    </head>
-    <body>
-        <!-- Text Component 1: Nav Bar  -->
-        <nav id="#top">
-            <a href="index.html" class="active">Home</a>
-            <a href="pages/about.html">About</a>
-            <a href="pages/blog.html">Blog</a>
-            <a href="pages/contact.html">Contact</a>
-        </nav>
-        <!-- Text Component 3: Headers -->
-        <header>
-            <h1>Chris Gibson</h1>
-        </header>
-        <main>
-            <div class="container">
-                <h2 class="container-header">Skills</h2>
-                <!-- Text Component 4: Skills -->
-                <article class="skill-item">
-                    <h3>Design</h3>
-                    <p>
-                        Mobile-first design principles, capturing the mobile market and ensuring adaptability.<br>
-                        Iterative design using wireframes to improve design flexibility and fast adoption of change.<br>
-                        Basic understanding of CSS3 including fundamental knowledge of Flexbox and consistent themes.
-                    </p>
-                </article>
-                <article class="skill-item">
-                    <h3>Develop</h3>
-                    <p>
-                        Solid foundations of HTML5 ensuring reliability and stability of service.<br>
-                        Use of semantic elements promoting accessibility and including all potential customers.<br>
-                        Source control management utilising git for effective version handling.
-                    </p>
-                </article>
-                <article class="skill-item">
-                    <h3>Deploy</h3>
-                    <p>
-                        Cloud deployment to Netlify services, getting the product into your hands quickly.<br>
-                        Source control repositiories launched on Github as industry standard.<br>
-                        Subresource Integrity for security and peace of mind.
-                    </p>
-                </article>
-            </div>
-            <div class="container">
-                <h2 class="container-header">Projects</h2>
-                <!-- Graphical component 3: Projects Captioned Images -->
-                <article class="project-item">
-                    <h3>Terminal Ruby App</h3>
-                    <img src="images/Under-Construction.jpg" alt="under construction">
-                    <p>Include a terminal eumlator that hosts a version of your app here!</p>
-                </article>
-                <article class="project-item">
-                    <h3>Coming Soon</h3>
-                    <img src="images/loading.png" alt="loading screen">
-                    <p>More to come, check back later!</p>
-                </article>
-            </div>
-        </main>
-        <!-- Graphical Component 4: Footers -->
-        <footer>
-            <p>© 2020 Christopher M. Gibson. All rights reserved. <br>
-                Mobile: 0400 123 456 <br>
-                Email: placeholder-email@mail.com <br>
+  <head>
+      <!-- include when done in css link, generate with 'openssl dgst -sha384 -binary FILENAME.js | openssl base64 -A' in command line
+      integrity="sha256- 
+      sha384- 
+      sha512-" -->
+      <meta charset=utf-8>
+      <title>Chris Gibson</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/style.css" >
+  </head>
+  <body>
+    <div id="wrapper">
+      <img src="../images/background.jpg" id="background" />
+      <nav>
+        <div id="home-link">
+          <a href="#home">Chris Gibson</a>
+        </div>
+
+        <div id="section-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div id="social-links">
+          <a href="https://github.com/chris-gibs" id="github" target="_blank"><img src="images/github.png" alt="Github" width="30px"></a>
+          <a href="https://www.linkedin.com/in/chris-gibs" id="linkedin" target="_blank"><img src="images/linkedin.png" alt="LinkedIn" width="30px"></a>
+          <!-- CHANGE BELOW TO EMAIL -->
+          <a href="" id="twitter" target="_blank"><img src="images/twitter.png" alt="Twitter" width="30px"></a><br>
+        </div>
+      </nav>
+
+      <header id="home">
+        <h1 id="header-title">
+          <span class="italic">Chris</span> <span class="italic-left">Gibson</span>
+        </h1>
+        
+      </header>
+
+      <main>
+
+        <section class="container" id="about">
+          <h2 class="container-header">About Me</h2>
+          <img src="" alt="Me"/>
+          <p></p>
+        </section>
+
+        <section class="container" id="projects">
+          <header>
+            <h2 class="container-header">Projects</h2>
+          </header>
+          
+          <article class="project-item">
+            <h3>Terminal Ruby App</h3>
+            <img src="images/Under-Construction.jpg" alt="under construction">
+            <p></p>
+          </article>
+        </section>
+
+        <section class="container" id="experience">
+          <h2 class="container-header">Experience</h2>
+          <article class="experience-card">
+            <h3>Moonward</h3>
+            <img src="images/Under-Construction.jpg" alt="Moonward">
+            <p></p>
+          </article>
+
+          <article class="experience-card">
+            <h3>Coder Academy</h3>
+            <img src="images/coderacademy.jpeg" alt="Coder Academy">
+            <p>Learned about the fundamentals of web development from a host of great teachers across Australia both in class and remote</p>
+          </article>
+
+          <article>
+            <h3>Grilld</h3>
+            <img src="../images/grilld.jpg" alt="Grill'd">
+            <p>My original career in Hospitality began at Grill'd. I began at the end of 2014 and worked with them for 4 years, becoming an Assistant Restaurant Manager and training to become RM. This helped develop my skills in working with and eventually leading diverse groups of people across multiple restaurants to deliver a great product and an excellent service to our customers.
             </p>
-            <div id="social-links">
-                <!-- Included width as attributes as it solves a size issue with these images  -->
-                <a href="https://github.com/chris-gibs" id="github" target="_blank"><img src="images/github.png" alt="Github" width="50px"></a>
-                <a href="https://www.linkedin.com/in/chris-gibs" id="linkedin" target="_blank"><img src="images/linkedin.png" alt="LinkedIn" width="50px"></a>
-                <a href="https://twitter.com/_ChrisGibs" id="twitter" target="_blank"><img src="images/twitter.png" alt="Twitter" width="50px"></a><br>
-            </div>
-            <a href="#top" id="back-to-top">Back to Top</a>
-        </footer>
-    </body>
+          </article>
+        </section>
+
+      </main>
+
+      <footer id="contact">
+          <p>© 2022 Christopher M. Gibson. All rights reserved.</p>
+          
+          <a href="#home" id="back-to-top">Back to Top</a>
+      </footer>
+    </div>
+  </body>
 </html>

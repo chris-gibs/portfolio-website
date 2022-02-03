@@ -1,19 +1,43 @@
 /* Import Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 
-/* General styling */
 body {
-  background-color: #222222;
-  background-image: url('../images/background.jpg');
-  background-size: 100% auto;
+  /* background-color: #222222; */
   color: #e6e6e6;
-  font-family: 'Roboto Mono', sans-serif;
-  text-align: center;
-  height: auto;
+  font-family: "Roboto Mono", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
-main {
-  margin-left: 100px;
+
+#wrapper::-webkit-scrollbar {
+  display: none; /* for Chrome */
+  /* width: 0; */
 }
+
+.container {
+  /* width: 100%; */
+  display: flex;
+  align-items: center;
+  padding: 0.4em;
+  background-color: #161616;
+  width: min(90%, 900px);
+  margin-inline: auto;
+}
+
+.italic { font-style: italic; }
+.italic-left { transform: skew(30deg, 0deg); }
+
+#wrapper {
+  -ms-overflow-style: none; /* for IE, Edge */
+  scrollbar-width: none; /* for Firefox */
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  perspective: 10px
+}
+
 h2 {
   font-size: 30px;
 }
@@ -21,117 +45,70 @@ p {
   font-size: 13px;
 }
 
-/* Containers */
-/* General Article Container */
-.container {
-  margin: 16px auto;
-  width: 80%;
-  height: auto;
-  background-color: #161616;
-  border-radius: 12px;
-  padding: 8px;
+header {
+  position: relative;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-}
-.container-header {
-  width: 99%;
-}
-
-/* Contact Container */
-#contact-container {
-  display: block;
-  width: 530px;
-}
-
-/* Header and Footer Container */
-header, footer {
-  background-color: #161616;
-  margin: 30px 0px 30px 100px;
-  padding: 20px;
-}
-
-/* Components */
-/* Text Component 1: Nav Bar */
-nav {
-  width: 100px;
-  background-color: #161616;
-  position: fixed;
+  align-items: center;
   height: 100%;
-  overflow: auto;
+  transform-style: preserve-3d;
+  z-index: -1;
 }
+
+#background {
+  transform: translateZ(-15px) scale(2.5);
+  position: absolute;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+#header-title {
+  font-size: 6rem;
+  color: white;
+  text-shadow: 0 0 5px black;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0.4em 0;
+  background-color: #161616;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+}
+
 nav a {
-  display: block;
   font-weight: bold;
   color: #0092e0;
   font-size: 15px;
-  padding: 12px;
   text-decoration: none;
 }
+
 a.active {
   background-color: #e6e6e6;
   color: #0757a3;
   border-radius: 4px;
 }
 
-/* Text Component 2: Contact Form */
-input[type=text], textarea {
-  background-color: #161616;
-  width: 500px;
-  padding: 12px;
-  border: 1px solid #f5f5f5;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin: 8px;
-  resize: vertical;
-}
-textarea {
-  height: 20vh;
-}
-input[type=submit] {
-  background-color: #0092e0;
-  color: #e6e6e6;
-  margin: 8px auto;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  display: block;
+#home-link {
+  margin-left: 1em;
+  margin-right: auto;
 }
 
-/* Text Component 3: Headers */
+#social-links {
+  margin-left: auto;
+  margin-right: 1em;
+}
+
 header {
   border-bottom: 2px solid #0092e0;
 }
-h1 {
-  font-style: italic;
-  font-size: 50px;
-}
 
-/* Text Component 4: Skills */
-.skill-item {
-  display: block;
-  width: 400px;
-  height: auto;
-  margin: 12px;
-}
 
-/* Graphical Component 1: About Articles */
-.about-item {
-  width: 400px;
-  height: auto;
-  background-color: #0092e0f6;
-  border-radius: 12px;
-  margin: 8px;
-}
-.about-item h3, .about-item p  {
-  margin: 4px;
-  padding: 4px;
-}
-.about-item img {
-  width: 100%;
-  height: auto;
-}
 #resume-dl {
   width: 99%;
   font-weight: bold;
@@ -139,61 +116,32 @@ h1 {
   padding: 8px;
 }
 
-/* Graphical Component 2: Blog Post */
-.blog-post {
-  background-color: #161616;
-  margin: 30px 15px;
-  border: 1.5px solid #0092e0;
-  border-radius: 20px;
-}
-.blog-post .date {
-  font-size: 10px;
-  opacity: .7;
-}
-.blog-post h2, .blog-post .date {
-  padding: 4px;
-}
-.blog-post p {
-  margin: 12px;
-}
-.blog-post img {
-  width: 99.9%;
-  height: auto;
-}
-.blog-post h3, .blog-post ul, .blog-post .date {
-  text-align: left;
-}
-.blog-post h3 {
-  padding-left: 4px;
-}
-
-/* Graphical component 3: Projects Captioned Images */
-.project-item {
+.project-card {
   margin: 20px;
   width: 500px;
   height: auto;
   position: relative;
 }
-.project-item h3 {
+.project-card h3 {
   top: 10px;
   transform: translate(-50%, -50%);
 }
-.project-item p {
+.project-card p {
   width: 90%;
   bottom: 8px;
   transform: translate(-50%, 5%);
 }
-.project-item h3, .project-item p {
+.project-card h3,
+.project-card p {
   background: rgba(75, 73, 73, 0.8);
   position: absolute;
   left: 50%;
 }
-.project-item img {
+.project-card img {
   width: 500px;
   height: auto;
 }
 
-/* Graphical Component 4: Footers */
 footer {
   border-top: 2px solid #0092e0;
 }
@@ -201,20 +149,13 @@ footer p {
   font-size: 11px;
   opacity: 0.7;
 }
-#social-links {
-  width: 50%;
-  height: auto;
-  text-decoration: none;
-  display: flex;
-  margin: 0px auto;
-  justify-content: center;
-}
+
 #back-to-top {
   font-weight: bold;
   font-size: 15px;
 }
 
-/* Tablet Screen Adjustments */
+/*
 @media screen and (max-width: 700px) {
   nav {
     width: 100%;
@@ -224,18 +165,23 @@ footer p {
   nav a {
     float: left;
   }
-  main, header, footer {
+  main,
+  header,
+  footer {
     margin-left: 0;
   }
-  #contact-container, input[type=text], textarea {
+  #contact-container,
+  input[type="text"],
+  textarea {
     width: 95%;
   }
-  .project-item, .project-item img {
+  .project-item,
+  .project-item img {
     width: 90%;
   }
 }
 
-/* Mobile Screen Adjustments */
+
 @media screen and (max-width: 400px) {
   nav a {
     float: none;
@@ -244,7 +190,8 @@ footer p {
   .container {
     display: block;
   }
-  .skill-item, .about-item {
+  .skill-item,
+  .about-item {
     width: 95%;
   }
   .project-item h2 {
